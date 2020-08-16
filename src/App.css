@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+html,
+body {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root,
+.container,
+.loader {
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  padding: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.loader {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  margin: 0;
+  background-color: #f1f2f6;
+  font-family: "Open Sans", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movies .movie {
+  display: flex;
+  width: 35%;
+  background-color: #ffffff;
+  margin-bottom: 70px;
+  padding: 20px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.movies .movie_poster {
+  position: relative;
+  top: -50px;
+  margin-right: 20px;
+}
+
+.movies .movie_poster .movie_img {
+  max-width: 150px;
+}
+
+.movies .movie_year {
+  color: #808080;
+}
+
+.movies .movie_genres {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  color: #808080;
+}
+
+.movies .movie_genres li {
+  margin-right: 10px;
+}
+
+.movies .movie_summary {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: #808080;
 }
