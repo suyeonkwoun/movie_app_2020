@@ -61,6 +61,7 @@ body {
   list-style: none;
   display: flex;
   color: #808080;
+  flex-wrap: wrap;
 }
 
 .movies .movie_genres li {
