@@ -1,41 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-
-html,
-body {
-  height: 100vh;
-}
-
-#root,
-.container,
-.loader {
-  height: 100%;
-}
-
-.container {
-  padding: 70px;
-}
-
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body {
-  margin: 0;
-  background-color: #f1f2f6;
-  font-family: "Open Sans", sans-serif;
-}
-
 .movies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
+.movies a {
+  width: 35%;
+  text-decoration: none;
+  color: #222222;
+}
+
 .movies .movie {
   display: flex;
-  width: 35%;
   background-color: #ffffff;
   margin-bottom: 70px;
   padding: 20px;
